@@ -1,0 +1,198 @@
+2025-12-31T15:22:14.269+05:30  INFO 9568 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : Starting McpServerApplication using Java 21.0.9 with PID 9568 (D:\MCPServer\demo\target\classes started by HP in D:\MCPServer\demo)
+2025-12-31T15:22:14.269+05:30  INFO 9568 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T15:22:14.876+05:30  WARN 9568 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:22:14.876+05:30  WARN 9568 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:22:14.892+05:30  WARN 9568 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:22:15.363+05:30  WARN 9568 --- [MCPServer] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 6
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2025-12-31T15:22:15.429+05:30  INFO 9568 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2025-12-31T15:22:15.429+05:30  WARN 9568 --- [MCPServer] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+2025-12-31T15:22:15.461+05:30  INFO 9568 --- [MCPServer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31T15:22:15.480+05:30 ERROR 9568 --- [MCPServer] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at com.mcp.demo.mcp_EV_Charger_Service.McpServerApplication.main(McpServerApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.ai.mcp.server.common.autoconfigure.McpServerAutoConfiguration.mcpSyncServer(McpServerAutoConfiguration.java:217) ~[spring-ai-autoconfigure-mcp-server-common-1.1.2.jar:1.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.context.support.StandardServletEnvironment
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 27 common frames omitted
+
+2025-12-31T15:23:46.828+05:30  INFO 9312 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : Starting McpServerApplication using Java 21.0.9 with PID 9312 (D:\MCPServer\demo\target\classes started by HP in D:\MCPServer\demo)
+2025-12-31T15:23:46.828+05:30  INFO 9312 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T15:23:48.087+05:30  WARN 9312 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:23:48.092+05:30  WARN 9312 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:23:48.132+05:30  WARN 9312 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:23:49.157+05:30  WARN 9312 --- [MCPServer] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2025-12-31T15:23:49.285+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2025-12-31T15:23:49.292+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 6
+2025-12-31T15:23:49.292+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2025-12-31T15:23:49.292+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2025-12-31T15:23:49.300+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2025-12-31T15:23:49.300+05:30  INFO 9312 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2025-12-31T15:23:49.308+05:30  WARN 9312 --- [MCPServer] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+2025-12-31T15:23:49.357+05:30  INFO 9312 --- [MCPServer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31T15:23:49.398+05:30 ERROR 9312 --- [MCPServer] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at com.mcp.demo.mcp_EV_Charger_Service.McpServerApplication.main(McpServerApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.ai.mcp.server.common.autoconfigure.McpServerAutoConfiguration.mcpSyncServer(McpServerAutoConfiguration.java:217) ~[spring-ai-autoconfigure-mcp-server-common-1.1.2.jar:1.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.context.support.StandardServletEnvironment
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 27 common frames omitted
+
+2025-12-31T15:25:31.298+05:30  INFO 13208 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : Starting McpServerApplication using Java 21.0.9 with PID 13208 (D:\MCPServer\demo\target\classes started by HP in D:\MCPServer\demo)
+2025-12-31T15:25:31.313+05:30  INFO 13208 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T15:25:32.400+05:30  WARN 13208 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:25:32.400+05:30  WARN 13208 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:25:32.424+05:30  WARN 13208 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:25:33.355+05:30  WARN 13208 --- [MCPServer] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2025-12-31T15:25:33.488+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2025-12-31T15:25:33.488+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 6
+2025-12-31T15:25:33.488+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2025-12-31T15:25:33.499+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2025-12-31T15:25:33.499+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2025-12-31T15:25:33.499+05:30  INFO 13208 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2025-12-31T15:25:33.499+05:30  WARN 13208 --- [MCPServer] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+2025-12-31T15:25:33.546+05:30  INFO 13208 --- [MCPServer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-31T15:25:33.578+05:30 ERROR 13208 --- [MCPServer] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.15.jar:6.2.15]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.10-SNAPSHOT.jar:3.5.10-SNAPSHOT]
+	at com.mcp.demo.mcp_EV_Charger_Service.McpServerApplication.main(McpServerApplication.java:15) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.15.jar:6.2.15]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.ai.mcp.server.common.autoconfigure.McpServerAutoConfiguration.mcpSyncServer(McpServerAutoConfiguration.java:217) ~[spring-ai-autoconfigure-mcp-server-common-1.1.2.jar:1.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.15.jar:6.2.15]
+	... 23 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.context.support.StandardServletEnvironment
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 27 common frames omitted
+
+2025-12-31T15:28:15.760+05:30  INFO 13524 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : Starting McpServerApplication using Java 21.0.9 with PID 13524 (D:\MCPServer\demo\target\classes started by HP in D:\MCPServer\demo)
+2025-12-31T15:28:15.768+05:30  INFO 13524 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : No active profile set, falling back to 1 default profile: "default"
+2025-12-31T15:28:17.144+05:30  WARN 13524 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:28:17.147+05:30  WARN 13524 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:28:17.165+05:30  WARN 13524 --- [MCPServer] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2025-12-31T15:28:17.725+05:30  INFO 13524 --- [MCPServer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-31T15:28:17.761+05:30  INFO 13524 --- [MCPServer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-31T15:28:17.761+05:30  INFO 13524 --- [MCPServer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-31T15:28:17.935+05:30  INFO 13524 --- [MCPServer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-31T15:28:17.935+05:30  INFO 13524 --- [MCPServer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2047 ms
+2025-12-31T15:28:19.474+05:30  WARN 13524 --- [MCPServer] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2025-12-31T15:28:19.556+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2025-12-31T15:28:19.556+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 6
+2025-12-31T15:28:19.556+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2025-12-31T15:28:19.556+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2025-12-31T15:28:19.567+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2025-12-31T15:28:19.569+05:30  INFO 13524 --- [MCPServer] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2025-12-31T15:28:19.982+05:30  INFO 13524 --- [MCPServer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-31T15:28:20.009+05:30  INFO 13524 --- [MCPServer] [main] c.m.d.m.McpServerApplication             : Started McpServerApplication in 5.403 seconds (process running for 5.889)
+2025-12-31T15:29:41.633+05:30  INFO 13524 --- [MCPServer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-31T15:29:41.633+05:30  INFO 13524 --- [MCPServer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-31T15:29:41.638+05:30  INFO 13524 --- [MCPServer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-12-31T15:30:09.841+05:30  INFO 13524 --- [MCPServer] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-31T15:30:09.874+05:30  INFO 13524 --- [MCPServer] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
